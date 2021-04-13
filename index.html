@@ -11,7 +11,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-   
+    <style>
+        #loading,#results
+        {
+            display: none ;
+        }
+    </style>
   </head>
   <body class="bg-dark">
     <div class="container">
@@ -35,11 +40,15 @@
               <div class="form-group">
                 <input type="number" class="form-control" id="years" placeholder="Years To Repay">
               </div>
-              <div class="forn-group">
+              <div class="form-group">
                 <input type="submit" value="Calculate" class="btn btn-dark btn-block">
               </div>
             </form>
             
+            <div id="loading">
+                <img src='loading.gif'>
+            </div>
+
             <div id="results" class="pt-4">
                 <h5>Results</h5>
                 <div class="form-group">
